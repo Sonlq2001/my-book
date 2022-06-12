@@ -1,0 +1,23 @@
+// default layout
+.default-layout {
+	display: flex;
+	.default-sidebar {
+		width: 25rem;
+	}
+	.default-content {
+		width: calc(100% - 25rem);
+		.default-title {
+			font-size: 2.9rem;
+			line-height: 3.5rem;
+			font-weight: 500;
+		}
+		.content {
+			padding: 1.6rem;
+			background-color: $bg-content;
+			min-height: calc(100vh - 57px);
+		}
+		.content-page {
+			margin-top: 1.5rem;
+		}
+	}
+}

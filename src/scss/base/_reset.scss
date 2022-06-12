@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+html {
+	font-size: 62.5%;
+	line-height: 2rem;
+}
+
+body {
+	font-size: 1.6rem;
+}
+
+img {
+	object-fit: cover;
+	vertical-align: middle;
+}
+
+input,
+button {
+	outline: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: $white-color;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
