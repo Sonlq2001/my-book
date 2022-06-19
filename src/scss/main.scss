@@ -3,6 +3,7 @@
 
 // base
 @import "./base/reset";
+@import "./base/common";
 
 // layouts
 @import "./layouts/app";
@@ -10,3 +11,8 @@
 // components
 @import "./components/sidebar";
 @import "./components/navbar";
+@import "./components/call-out";
+
+// pages
+@import "./pages/home";
+@import "./pages/book";

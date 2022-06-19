@@ -1,0 +1,22 @@
+.call-out {
+	padding: 1.6rem;
+	background-color: $white-color;
+	border-radius: 5px;
+	box-shadow: 0 0 1px #00000021, 0 1px 3px #00000033;
+	border-left: 6px solid $blue;
+
+	i {
+		font-size: 2.5rem;
+	}
+	span {
+		font-size: 2rem;
+		font-weight: 500;
+		line-height: 2.4rem;
+		padding-left: 5px;
+	}
+	p {
+		margin-top: 1rem;
+		max-width: 80%;
+		line-height: 2.5rem;
+	}
+}

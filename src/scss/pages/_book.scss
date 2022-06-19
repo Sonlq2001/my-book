@@ -1,0 +1,96 @@
+// book being
+.tab-header {
+	padding: 8px;
+	border-bottom: 1px solid $gray-border;
+	.btn-tab {
+		padding: 8px 1.6rem;
+		border: none;
+		border-radius: 5px;
+		background-color: transparent;
+		font-size: 1.6rem;
+		color: $sidebar-border;
+	}
+}
+
+.tab-content {
+	padding: 2rem;
+}
+.tab-item {
+	display: flex;
+	.tab-img {
+		width: 50%;
+		margin-right: 3rem;
+		img {
+			width: 100%;
+		}
+	}
+}
+.tab-body {
+	width: 50%;
+	.tab-title {
+		font-size: 3.5rem;
+		font-style: italic;
+		font-weight: 300;
+		line-height: 4rem;
+		margin-bottom: 4rem;
+	}
+	.tab-info {
+		display: flex;
+		align-items: center;
+		margin-bottom: 1.5rem;
+		p {
+			font-size: 1.8rem;
+			padding-left: 2rem;
+		}
+	}
+	.content-note {
+		background-color: #eee;
+		padding: 2rem;
+		border-radius: 5px;
+		margin-top: 2rem;
+		line-height: 2.5rem;
+	}
+}
+
+// book pending
+.box-pending {
+	margin-top: 4rem;
+	.box-header {
+		padding: 1.2rem 2rem;
+		font-size: 1.8rem;
+		line-height: 2.1rem;
+		color: $txt-black;
+		border-bottom: 1px solid $nav-border;
+	}
+	.box-body {
+		padding: 2rem;
+	}
+	.box-footer {
+		background-color: $box-footer;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		padding: 1.2rem 2rem;
+	}
+}
+.paginate {
+	display: flex;
+	border-radius: 5px;
+	.item-page:first-child {
+		border-radius: 5px 0 0 5px;
+	}
+	.item-page:last-child {
+		border-radius: 0 5px 5px 0;
+	}
+	.item-page {
+		padding: 4px 8px;
+		cursor: pointer;
+		border: 1px solid $nav-border;
+		font-size: 1.4rem;
+		line-height: 2.1rem;
+		color: $blue;
+		&:hover {
+			background-color: $paginate-hover;
+		}
+	}
+}

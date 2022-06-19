@@ -41,7 +41,7 @@
 									:key="subMenu.title"
 									class="item-menu"
 								>
-									<router-link to="/" class="link-menu">
+									<router-link :to="subMenu.path" class="link-menu">
 										<div class="box-menu">
 											<i class="fa-solid fa-circle-dot"></i>
 											<p>{{ subMenu.title }}</p>
@@ -50,7 +50,7 @@
 								</li>
 							</ul>
 						</div>
-						<router-link to="/login" v-else class="link-menu">
+						<router-link v-else :to="menu.path" class="link-menu">
 							<div class="box-menu" @click="() => handleMenu(menu)">
 								<div class="wrap-menu">
 									<i :class="menu.icon"></i>

@@ -1,0 +1,30 @@
+// layout
+.wrap-box {
+	display: flex;
+	.box-left {
+		width: 25%;
+	}
+	.box-right {
+		width: calc(100% - 25%);
+		background-color: $white-color;
+		border-radius: 5px;
+		box-shadow: 0 0 1px #00000021, 0 1px 3px #00000033;
+	}
+}
+
+// table
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+tr:first-child {
+	border-bottom: 1px solid $nav-border;
+}
+tr:not(:first-child):hover {
+	background-color: $tr-hover;
+}
+td,
+th {
+	border: 1px solid $nav-border;
+	padding: 1.2rem;
+}
