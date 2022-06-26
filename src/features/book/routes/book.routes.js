@@ -1,5 +1,6 @@
 import BookBeing from "../screens/BookBeing/BookBeing.vue";
 import BookPending from "../screens/BookPending/BookPending.vue";
+import BookAction from "../screens/BookAction/BookAction.vue";
 
 const BOOK_BEING = {
 	name: "book-being",
@@ -13,4 +14,10 @@ const BOOK_PENDING = {
 	component: BookPending,
 };
 
-export const BOOK_ROUTES = [BOOK_BEING, BOOK_PENDING];
+const BOOK_ACTION = {
+	name: "book-action",
+	path: "/book-action",
+	component: BookAction,
+};
+
+export const BOOK_ROUTES = [BOOK_BEING, BOOK_PENDING, BOOK_ACTION];

@@ -3,8 +3,40 @@
 		<CallOutComponent />
 
 		<div class="wrap-box box-pending">
-			<div class="box-left">left</div>
-			<div class="box-right">
+			<div class="box-left">
+				<BoxHeader title="Tìm kiếm">
+					<router-link to="/book-action">
+						<button class="btn btn-primary">
+							<i class="fa-solid fa-plus"></i>
+						</button>
+					</router-link>
+					<form class="group-search">
+						<h3 class="title-form">Xắp xếp</h3>
+						<div class="box-search">
+							<label
+								v-for="item in constantsCheckbox"
+								:key="item.id"
+								class="label-checkbox"
+								:for="item.id"
+							>
+								<input type="checkbox" :id="item.id" />
+								<span>{{ item.name }}</span>
+							</label>
+						</div>
+						<div class="box-search">
+							<div class="search-text">
+								<input
+									type="text"
+									placeholder="Tìm kiếm"
+									class="input-search"
+								/>
+								<button class="btn-search">Tìm</button>
+							</div>
+						</div>
+					</form>
+				</BoxHeader>
+			</div>
+			<div class="box-right bg-white shadow radius-5">
 				<div class="box-header">Sách hay nên đọc</div>
 				<div class="box-body">
 					<table>
@@ -56,9 +88,17 @@
 
 <script>
 import CallOutComponent from "@/components/CallOut/CallOutComponent.vue";
+import BoxHeader from "@/components/BoxHeader/BoxHeader.vue";
+import { CHECKBOX_SEARCH } from "./../../constants/book.constants";
 export default {
 	components: {
 		CallOutComponent,
+		BoxHeader,
+	},
+	data() {
+		return {
+			constantsCheckbox: CHECKBOX_SEARCH,
+		};
 	},
 };
 </script>

@@ -1,0 +1,57 @@
+.book-action {
+	overflow: hidden;
+	.title-action {
+		padding: 1.2rem 2rem;
+		font-size: 1.8rem;
+		background: $blue;
+		color: $white-color;
+	}
+}
+
+.form-action {
+	padding: 2rem;
+	display: flex;
+	.form-left,
+	.form-right {
+		width: 50%;
+	}
+	.form-left {
+		margin-right: 4rem;
+	}
+}
+.form-group {
+	margin-bottom: 2rem;
+	.label-form {
+		display: block;
+		font-size: 1.8rem;
+		margin-bottom: 1.5rem;
+	}
+	.input-form {
+		border: 1px solid $nav-border;
+		border-radius: 5px;
+		padding: 1rem;
+		font-size: 1.6rem;
+		width: 100%;
+		&:focus {
+			border: 1px solid $blue;
+		}
+	}
+	.group-radio {
+		display: flex;
+		align-items: center;
+	}
+	.radio-box {
+		display: flex;
+		align-items: center;
+		margin-right: 3rem;
+		label {
+			margin-left: 1rem;
+		}
+	}
+	.input-file {
+		padding: 8px;
+	}
+	.image-preview {
+		margin-top: 2rem;
+	}
+}

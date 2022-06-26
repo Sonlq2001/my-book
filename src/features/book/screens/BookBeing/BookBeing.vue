@@ -1,7 +1,25 @@
 <template>
 	<div class="wrap-box">
-		<div class="box-left">left</div>
-		<div class="box-right">
+		<div class="box-left">
+			<BoxHeader title="Ghi chú">
+				<div class="box-note">
+					<label for="" class="label-note">Dòng cảm xúc</label>
+					<div class="box-text">
+						<textarea
+							name=""
+							id=""
+							cols="30"
+							rows="7"
+							placeholder="Nội dung"
+							class="text-note"
+						></textarea>
+						<div class="max-text">1/100</div>
+					</div>
+				</div>
+				<button class="btn btn-primary">Thêm</button>
+			</BoxHeader>
+		</div>
+		<div class="box-right bg-white shadow radius-5">
 			<section class="tab-header">
 				<button class="btn-tab">Đang đọc</button>
 				<button class="btn-tab">Chờ đọc</button>
@@ -42,7 +60,10 @@
 </template>
 
 <script>
-export default {};
+import BoxHeader from "@/components/BoxHeader/BoxHeader.vue";
+export default {
+	components: { BoxHeader },
+};
 </script>
 
 <style></style>
