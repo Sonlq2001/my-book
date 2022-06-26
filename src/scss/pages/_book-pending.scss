@@ -1,0 +1,87 @@
+// book pending
+.box-pending {
+	margin-top: 4rem;
+	.box-header {
+		padding: 1.2rem 2rem;
+		font-size: 1.8rem;
+		line-height: 2.1rem;
+		color: $txt-black;
+		border-bottom: 1px solid $nav-border;
+	}
+	.box-body {
+		padding: 2rem;
+	}
+	.box-footer {
+		background-color: $box-footer;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		padding: 1.2rem 2rem;
+	}
+}
+.paginate {
+	display: flex;
+	border-radius: 5px;
+	.item-page:first-child {
+		border-radius: 5px 0 0 5px;
+	}
+	.item-page:last-child {
+		border-radius: 0 5px 5px 0;
+	}
+	.item-page {
+		padding: 4px 8px;
+		cursor: pointer;
+		border: 1px solid $nav-border;
+		font-size: 1.4rem;
+		line-height: 2.1rem;
+		color: $blue;
+		&:hover {
+			background-color: $paginate-hover;
+		}
+	}
+}
+
+.group-search {
+	margin-top: 4rem;
+	.input-search {
+		width: 100%;
+		border: none;
+		border: 1px solid $nav-border;
+		padding: 1rem;
+		border-radius: 5px 0 0 5px;
+		border-right: none;
+		font-size: 1.6rem;
+	}
+	.btn-search {
+		height: 100%;
+		border: none;
+		font-size: 1.6rem;
+		padding: 1rem 1.5rem;
+		border-radius: 0 5px 5px 0;
+		border: 1px solid $nav-border;
+		background-color: $blue;
+		color: $white-color;
+		&:hover {
+			background-color: $blue2;
+		}
+	}
+	.title-form {
+		margin-bottom: 2rem;
+	}
+}
+.box-search:not(:last-child) {
+	margin-bottom: 2rem;
+}
+.search-text {
+	display: flex;
+	align-items: center;
+}
+.label-checkbox {
+	display: inline-flex;
+	align-items: center;
+	margin: 0 2rem 2rem 0;
+	span {
+		padding-left: 1rem;
+		font-size: 1.7rem;
+	}
+}

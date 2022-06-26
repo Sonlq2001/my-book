@@ -1,9 +1,9 @@
 // book being
 .tab-header {
-	padding: 8px;
+	padding: 8px 2rem;
 	border-bottom: 1px solid $gray-border;
 	.btn-tab {
-		padding: 8px 1.6rem;
+		padding: 5px 1.4rem;
 		border: none;
 		border-radius: 5px;
 		background-color: transparent;
@@ -52,45 +52,25 @@
 	}
 }
 
-// book pending
-.box-pending {
-	margin-top: 4rem;
-	.box-header {
-		padding: 1.2rem 2rem;
-		font-size: 1.8rem;
-		line-height: 2.1rem;
-		color: $txt-black;
-		border-bottom: 1px solid $nav-border;
-	}
-	.box-body {
-		padding: 2rem;
-	}
-	.box-footer {
-		background-color: $box-footer;
-		display: flex;
-		align-items: center;
-		justify-content: flex-end;
-		padding: 1.2rem 2rem;
+.label-note {
+	display: block;
+	margin-bottom: 1.5rem;
+}
+.box-text {
+	background-color: $paginate-hover;
+	border-radius: 5px;
+	margin-bottom: 3rem;
+	.max-text {
+		font-size: 1.3rem;
+		text-align: right;
+		padding: 5px 1rem;
+		color: $sidebar-border;
 	}
 }
-.paginate {
-	display: flex;
-	border-radius: 5px;
-	.item-page:first-child {
-		border-radius: 5px 0 0 5px;
-	}
-	.item-page:last-child {
-		border-radius: 0 5px 5px 0;
-	}
-	.item-page {
-		padding: 4px 8px;
-		cursor: pointer;
-		border: 1px solid $nav-border;
-		font-size: 1.4rem;
-		line-height: 2.1rem;
-		color: $blue;
-		&:hover {
-			background-color: $paginate-hover;
-		}
-	}
+.text-note {
+	padding: 1rem;
+	width: 100%;
+	resize: none;
+	font-size: 1.6rem;
+	background-color: transparent;
 }
