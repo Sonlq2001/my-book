@@ -1,6 +1,9 @@
 <template>
 	<div class="book-pending">
-		<CallOutComponent />
+		<CallOutComponent
+			title="Còn rất nhiều cuốn sách hay đang chờ bạn đọc, hãy cố gắng kiên trì
+					đọc giành thời gian đọc sách mỗi ngày."
+		/>
 
 		<div class="wrap-box box-pending">
 			<div class="box-left">

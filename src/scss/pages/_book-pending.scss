@@ -1,23 +1,6 @@
 // book pending
 .box-pending {
 	margin-top: 4rem;
-	.box-header {
-		padding: 1.2rem 2rem;
-		font-size: 1.8rem;
-		line-height: 2.1rem;
-		color: $txt-black;
-		border-bottom: 1px solid $nav-border;
-	}
-	.box-body {
-		padding: 2rem;
-	}
-	.box-footer {
-		background-color: $box-footer;
-		display: flex;
-		align-items: center;
-		justify-content: flex-end;
-		padding: 1.2rem 2rem;
-	}
 }
 .paginate {
 	display: flex;

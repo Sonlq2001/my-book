@@ -55,3 +55,18 @@
 		margin-top: 2rem;
 	}
 }
+
+.group-date {
+	display: flex;
+	label {
+		font-size: 1.4rem;
+		display: inline-block;
+		margin-bottom: 1rem;
+	}
+	div {
+		width: 50%;
+	}
+	div:first-child {
+		margin-right: 1.5rem;
+	}
+}

@@ -1,0 +1,53 @@
+.timeline {
+	position: relative;
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		background-color: $gray-border;
+		width: 4px;
+		left: 3.3rem;
+		height: 100%;
+	}
+}
+.time-label {
+	font-weight: 600;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: $red;
+	color: $white-color;
+	display: inline-block;
+	position: relative;
+}
+
+.box-timeline {
+	margin-top: 2rem;
+	display: flex;
+	align-items: stretch;
+	i {
+		font-size: 1.8rem;
+		margin-left: 2rem;
+		position: relative;
+		width: 3rem;
+		height: 3rem;
+		background-color: $blue2;
+		border-radius: 50%;
+		color: $white-color;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.content-timeline {
+	flex-grow: 1;
+	margin-left: 4rem;
+	.head-timeline {
+		padding: 1rem;
+		font-size: 1.6rem;
+		font-weight: 600;
+		border-bottom: 1px solid $nav-border;
+	}
+	.body-timeline {
+		padding: 1rem;
+	}
+}

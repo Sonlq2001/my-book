@@ -43,7 +43,11 @@
 								>
 									<router-link :to="subMenu.path" class="link-menu">
 										<div class="box-menu">
-											<i class="fa-solid fa-circle-dot"></i>
+											<i
+												:class="
+													subMenu.icon ? subMenu.icon : 'fa-solid fa-book'
+												"
+											></i>
 											<p>{{ subMenu.title }}</p>
 										</div>
 									</router-link>
