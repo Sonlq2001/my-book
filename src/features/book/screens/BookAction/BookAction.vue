@@ -32,7 +32,16 @@
 				</div>
 				<div class="form-group">
 					<label for="" class="label-form">Thời gian</label>
-					<input type="date" class="input-form" />
+					<div class="group-date">
+						<div>
+							<label for="">Bắt đầu</label>
+							<input type="date" class="input-form" />
+						</div>
+						<div>
+							<label for="">Kết thúc</label>
+							<input type="date" class="input-form" />
+						</div>
+					</div>
 				</div>
 			</div>
 

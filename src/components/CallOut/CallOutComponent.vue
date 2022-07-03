@@ -6,17 +6,18 @@
 				<span>Note:</span>
 			</h5>
 			<p>
-				<em
-					>Còn rất nhiều cuốn sách hay đang chờ bạn đọc, hãy cố gắng kiên trì
-					đọc giành thời gian đọc sách mỗi ngày.</em
-				>
+				<em> {{ title }}</em>
 			</p>
 		</div>
 	</section>
 </template>
 
 <script>
-export default {};
+export default {
+	props: {
+		title: String,
+	},
+};
 </script>
 
 <style></style>

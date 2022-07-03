@@ -22,14 +22,17 @@ export const ROUTES = [
 			{
 				path: "/book-being",
 				title: "Sách đang đọc",
+				icon: "fa-solid fa-spinner",
 			},
 			{
 				path: "/book-pending",
 				title: "Sách nên đọc",
+				icon: "fa-solid fa-heart",
 			},
 			{
-				path: "/book-read",
+				path: "/books-read",
 				title: "Sách đã đọc",
+				icon: "fa-solid fa-list-check",
 			},
 		],
 	},
