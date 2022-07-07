@@ -5,7 +5,7 @@ const AUTH_SCREEN = {
 	name: "auth",
 	component: LoginScreen,
 	meta: {
-		layout: "AuthLayout",
+		layout: "BlankLayout",
 	},
 };
 

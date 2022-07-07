@@ -1,8 +1,5 @@
 <template>
-	<div class="">
-		<h2>auth layout</h2>
-		<slot />
-	</div>
+	<slot />
 </template>
 
 <script>
